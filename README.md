@@ -49,8 +49,6 @@ This project is a C# WinForms desktop application and is intended to be run from
 4. Build the solution.
 5. Run the project.
 
-The simulator uses local fake data only. It does not connect to Microsoft 365, Entra ID, Exchange, Microsoft Graph, or any live Windows devices.
-
 ## Future Improvements
 
 - Split Form1 logic into dedicated services
@@ -61,4 +59,4 @@ The simulator uses local fake data only. It does not connect to Microsoft 365, E
 
 ## Disclaimer
 
-This is a local training simulator. It does not connect to Microsoft 365, Entra ID, Windows devices, Exchange, or Microsoft Graph. All users, devices, groups, and tickets are fake practice data.
+This is a local training simulator and uses local fake data only. Fake Data is located in the Json file It does not connect to Microsoft 365, Entra ID, Windows devices, Exchange, or Microsoft Graph. All users, devices, groups, and tickets are fake practice data.
