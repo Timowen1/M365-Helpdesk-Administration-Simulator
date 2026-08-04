@@ -18,7 +18,7 @@ I built this project to practice hands-on helpdesk and administrator workflows w
 - Auto-checking ticket progress
 - Audit log for administrative actions
 
-## Technologies
+## Technologies used
 
 - C#
 - WinForms
@@ -26,6 +26,6 @@ I built this project to practice hands-on helpdesk and administrator workflows w
 - Local in-memory fake data store
 - JSON scenario loading
 
-## Why This Project
+## Why did I build this Project?
 
 This project was built as an interview preparation tool for IT Support Specialist workflows involving user, group, device, email, and Windows administrative troubleshooting.
