@@ -30,6 +30,27 @@ I built this project to practice hands-on helpdesk and administrator workflows w
 
 This project was built as an interview preparation tool for IT Support Specialist workflows involving user, group, device, email, and Windows administrative troubleshooting.
 
+## Requirements
+
+To run this project locally, you will need:
+
+- Visual Studio 2022 or newer
+- .NET desktop development workload installed
+- Windows OS
+- Newtonsoft.Json NuGet package
+
+This project is a C# WinForms desktop application and is intended to be run from Visual Studio.
+
+## How to Run
+
+1. Clone or download this repository.
+2. Open the `.sln` file in Visual Studio.
+3. Restore NuGet packages if prompted.
+4. Build the solution.
+5. Run the project.
+
+The simulator uses local fake data only. It does not connect to Microsoft 365, Entra ID, Exchange, Microsoft Graph, or any live Windows devices.
+
 ## Future Improvements
 
 - Split Form1 logic into dedicated services
