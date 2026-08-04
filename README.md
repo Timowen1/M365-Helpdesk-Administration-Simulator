@@ -29,3 +29,11 @@ I built this project to practice hands-on helpdesk and administrator workflows w
 ## Why did I build this Project?
 
 This project was built as an interview preparation tool for IT Support Specialist workflows involving user, group, device, email, and Windows administrative troubleshooting.
+
+## Future Improvements
+
+- Split Form1 logic into dedicated services
+- Add persistent save/load
+- Add scenario prerequisites
+- Improve ticket validation model with check IDs
+- Add device and group inventory forms
