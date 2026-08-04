@@ -37,3 +37,7 @@ This project was built as an interview preparation tool for IT Support Specialis
 - Add scenario prerequisites
 - Improve ticket validation model with check IDs
 - Add device and group inventory forms
+
+## Disclaimer
+
+This is a local training simulator. It does not connect to Microsoft 365, Entra ID, Windows devices, Exchange, or Microsoft Graph. All users, devices, groups, and tickets are fake practice data.
