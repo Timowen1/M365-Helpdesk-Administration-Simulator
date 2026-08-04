@@ -1,0 +1,619 @@
+﻿[
+  {
+    "scenarioType": "DeviceHealthTroubleshooting",
+    "title": "Sarah's laptop has pending Windows updates",
+    "description": "Sarah Miller reports that she cannot continue working because her laptop has pending Windows updates.\n\nFind Sarah, review her assigned device health, and run Windows Update.",
+    "targetUserEmail": "sarah.miller@northstar.local",
+    "requiredDeviceIssue": "WindowsUpdatePending",
+    "requiredDeviceName": "LAPTOP-SARAH01",
+    "expectedActions": [
+      "Find and select Sarah Miller",
+      "Review assigned device health",
+      "Run Windows Update",
+      "Verify Windows Update status is Current"
+    ],
+    "successMessage": "Sarah's laptop updates have been completed."
+  },
+  {
+    "scenarioType": "PasswordReset",
+    "title": "Sarah forgot her password",
+    "description": "Sarah Miller forgot her password and needs help signing in.\n\nVerify her account status and perform a password reset.",
+    "targetUserEmail": "sarah.miller@northstar.local",
+    "expectedActions": [
+      "Find and select Sarah Miller",
+      "Confirm account is not soft-deleted",
+      "Reset Sarah's password",
+      "Verify password reset appears in the audit log"
+    ],
+    "successMessage": "Sarah's password reset workflow has been reviewed."
+  },
+  {
+    "scenarioType": "DeviceHealthTroubleshooting",
+    "title": "Mike's laptop needs BitLocker enabled",
+    "description": "Mike Johnson's assigned laptop is missing BitLocker protection.\n\nFind Mike, review his assigned device health, and enable BitLocker.",
+    "targetUserEmail": "mike.johnson@northstar.local",
+    "requiredDeviceIssue": "BitLockerDisabled",
+    "requiredDeviceName": "LAPTOP-MIKE01",
+    "expectedActions": [
+      "Find and select Mike Johnson",
+      "Review assigned device health",
+      "Enable BitLocker",
+      "Verify BitLocker is Enabled"
+    ],
+    "successMessage": "Mike's laptop now has BitLocker enabled."
+  },
+
+  {
+    "scenarioType": "EmailTroubleshooting",
+    "title": "Sarah cannot receive email",
+    "description": "Sarah Miller reports that she cannot receive new email.\n\nReview her mailbox status and clear the mailbox full warning.",
+    "targetUserEmail": "sarah.miller@northstar.local",
+    "requiredEmailIssue": "MailboxFull",
+    "expectedActions": [
+      "Find and select Sarah Miller",
+      "Review mailbox status",
+      "Clear mailbox full warning",
+      "Verify mailbox status is Healthy"
+    ],
+    "successMessage": "Sarah's mailbox full issue has been resolved."
+  },
+  {
+    "scenarioType": "DeviceHealthTroubleshooting",
+    "title": "Sarah's laptop has pending Windows updates",
+    "description": "Sarah Miller reports that she cannot continue working because her laptop has pending Windows updates.\n\nFind Sarah, review her assigned device health, and run Windows Update.",
+    "targetUserEmail": "sarah.miller@northstar.local",
+    "requiredDeviceIssue": "WindowsUpdatePending",
+    "requiredDeviceName": "LAPTOP-SARAH01",
+    "expectedActions": [
+      "Find and select Sarah Miller",
+      "Review assigned device health",
+      "Run Windows Update",
+      "Verify Windows Update status is Current"
+    ],
+    "successMessage": "Sarah's laptop updates have been completed."
+  },
+  {
+    "scenarioType": "DeviceHealthTroubleshooting",
+    "title": "Mike's laptop has not checked in recently",
+    "description": "Mike Johnson's assigned laptop has not checked in recently.\n\nFind Mike, review his assigned device health, and refresh the device check-in.",
+    "targetUserEmail": "mike.johnson@northstar.local",
+    "requiredDeviceIssue": "CheckInStale",
+    "requiredDeviceName": "LAPTOP-MIKE01",
+    "expectedActions": [
+      "Find and select Mike Johnson",
+      "Review assigned device health",
+      "Refresh Device Check-In",
+      "Verify last check-in is current"
+    ],
+    "successMessage": "Mike's laptop check-in has been refreshed."
+  },
+  {
+    "scenarioType": "DeviceHealthTroubleshooting",
+    "title": "Nina's laptop has Defender disabled",
+    "description": "Nina Patel's assigned laptop shows Microsoft Defender is disabled.\n\nFind Nina, review her assigned device health, and enable Defender.",
+    "targetUserEmail": "nina.patel@northstar.local",
+    "requiredDeviceIssue": "DefenderDisabled",
+    "requiredDeviceName": "LAPTOP-NINA01",
+    "expectedActions": [
+      "Find and select Nina Patel",
+      "Review assigned device health",
+      "Enable Defender",
+      "Verify Defender is Enabled"
+    ],
+    "successMessage": "Nina's laptop now has Defender enabled."
+  },
+  {
+    "scenarioType": "DeviceHealthTroubleshooting",
+    "title": "Mike's laptop needs BitLocker enabled",
+    "description": "Mike Johnson's assigned laptop is missing BitLocker protection.\n\nFind Mike, review his assigned device health, and enable BitLocker.",
+    "targetUserEmail": "mike.johnson@northstar.local",
+    "requiredDeviceIssue": "BitLockerDisabled",
+    "requiredDeviceName": "LAPTOP-MIKE01",
+    "expectedActions": [
+      "Find and select Mike Johnson",
+      "Review assigned device health",
+      "Enable BitLocker",
+      "Verify BitLocker is Enabled"
+    ],
+    "successMessage": "Mike's laptop now has BitLocker enabled."
+  },
+  {
+    "scenarioType": "DeviceHealthTroubleshooting",
+    "title": "Nina's laptop has Defender disabled",
+    "description": "Nina Patel's assigned laptop shows Microsoft Defender is disabled.\n\nFind Nina, review her assigned device health, and enable Defender.",
+    "targetUserEmail": "nina.patel@northstar.local",
+    "requiredDeviceIssue": "DefenderDisabled",
+    "requiredDeviceName": "LAPTOP-NINA01",
+    "expectedActions": [
+      "Find and select Nina Patel",
+      "Review assigned device health",
+      "Enable Defender",
+      "Verify Defender is Enabled"
+    ],
+    "successMessage": "Nina's laptop now has Defender enabled."
+  },
+  {
+    "scenarioType": "DeviceHealthTroubleshooting",
+    "title": "Sarah's laptop has low disk space",
+    "description": "Sarah Miller reports that her laptop is running slowly and showing low disk space warnings.\n\nFind Sarah, review her assigned device health, and clear disk space.",
+    "targetUserEmail": "sarah.miller@northstar.local",
+    "requiredDeviceIssue": "LowDiskSpace",
+    "requiredDeviceName": "LAPTOP-SARAH01",
+    "expectedActions": [
+      "Find and select Sarah Miller",
+      "Review assigned device health",
+      "Clear Disk Space",
+      "Verify disk space is above 15%"
+    ],
+    "successMessage": "Sarah's laptop has enough free disk space now."
+  },
+  {
+    "scenarioType": "DeviceHealthTroubleshooting",
+    "title": "Mike's laptop has not checked in recently",
+    "description": "Mike Johnson's assigned laptop has not checked in recently.\n\nFind Mike, review his assigned device health, and refresh the device check-in.",
+    "targetUserEmail": "mike.johnson@northstar.local",
+    "requiredDeviceIssue": "CheckInStale",
+    "requiredDeviceName": "LAPTOP-MIKE01",
+    "expectedActions": [
+      "Find and select Mike Johnson",
+      "Review assigned device health",
+      "Refresh Device Check-In",
+      "Verify last check-in is current"
+    ],
+    "successMessage": "Mike's laptop check-in has been refreshed."
+  },
+  {
+    "scenarioType": "DeviceHealthTroubleshooting",
+    "title": "Sarah's laptop has low disk space",
+    "description": "Sarah Miller reports that her laptop is running slowly and showing low disk space warnings.\n\nFind Sarah, review her assigned device health, and clear disk space.",
+    "targetUserEmail": "sarah.miller@northstar.local",
+    "requiredDeviceIssue": "LowDiskSpace",
+    "requiredDeviceName": "LAPTOP-SARAH01",
+    "expectedActions": [
+      "Find and select Sarah Miller",
+      "Review assigned device health",
+      "Clear Disk Space",
+      "Verify disk space is above 15%"
+    ],
+    "successMessage": "Sarah's laptop has enough free disk space now."
+  },
+  {
+    "scenarioType": "PasswordReset",
+    "title": "Mike forgot his password",
+    "description": "Mike Johnson cannot sign in because he forgot his password.\n\nVerify the account is not soft-deleted, then reset his password.",
+    "targetUserEmail": "mike.johnson@northstar.local",
+    "expectedActions": [
+      "Find and select Mike Johnson",
+      "Confirm account is not soft-deleted",
+      "Reset Mike's password",
+      "Verify password reset appears in the audit log"
+    ],
+    "successMessage": "Mike's password reset workflow has been reviewed."
+  },
+  {
+    "scenarioType": "PasswordReset",
+    "title": "Nina needs a password reset",
+    "description": "Nina Patel reports that she cannot remember her password after returning from leave.\n\nVerify the account is not soft-deleted, then reset her password.",
+    "targetUserEmail": "nina.patel@northstar.local",
+    "expectedActions": [
+      "Find and select Nina Patel",
+      "Confirm account is not soft-deleted",
+      "Reset Nina's password",
+      "Verify password reset appears in the audit log"
+    ],
+    "successMessage": "Nina's password reset workflow has been reviewed."
+  },
+  {
+    "scenarioType": "SalesDriveAccess",
+    "title": "Sarah cannot access the Sales shared drive",
+    "description": "Sarah Miller reports that she cannot access the Sales shared drive.\n\nCheck her account status and verify whether she has the correct group membership.",
+    "targetUserEmail": "sarah.miller@northstar.local",
+    "expectedActions": [
+      "Find and select Sarah Miller",
+      "Confirm account status is Active",
+      "Confirm Sales-SharedDrive-Access group membership",
+      "Add Sarah to Sales-SharedDrive-Access if missing",
+      "Verify the action appears in the audit log"
+    ],
+    "successMessage": "Sarah's Sales shared drive access has been reviewed."
+  },
+  {
+    "scenarioType": "EmailTroubleshooting",
+    "title": "Nina cannot access Outlook",
+    "description": "Nina Patel cannot access Outlook because her account is missing a mail license.\n\nAssign the mail license and verify it is active.",
+    "targetUserEmail": "nina.patel@northstar.local",
+    "requiredEmailIssue": "MissingMailLicense",
+    "expectedActions": [
+      "Find and select Nina Patel",
+      "Review mailbox status",
+      "Assign mail license",
+      "Verify mail license is assigned"
+    ],
+    "successMessage": "Nina's missing mail license issue has been resolved."
+  },
+  {
+    "scenarioType": "EmployeeOffboarding",
+    "title": "Mike left the company",
+    "description": "Mike Johnson has left the company.\n\nPerform a safe offboarding workflow. Disable the account, remove access, and retire his assigned laptop.",
+    "targetUserEmail": "mike.johnson@northstar.local",
+    "expectedActions": [
+      "Find and select Mike Johnson",
+      "Disable Mike's account",
+      "Remove unnecessary group access",
+      "Retire Mike's assigned laptop",
+      "Verify all changes appear in the audit log"
+    ],
+    "successMessage": "Mike's offboarding workflow has been reviewed."
+  },
+  {
+    "scenarioType": "EmployeeOffboarding",
+    "title": "Sarah is leaving the Sales department",
+    "description": "Sarah Miller is leaving the company.\n\nDisable her account, remove her group access, and retire her assigned laptop.",
+    "targetUserEmail": "sarah.miller@northstar.local",
+    "expectedActions": [
+      "Find and Find and select Sarah Miller",
+      "Disable Sarah's account",
+      "Remove unnecessary group access",
+      "Retire Sarah's assigned laptop",
+      "Verify all changes appear in the audit log"
+    ],
+    "successMessage": "Sarah's offboarding workflow has been reviewed."
+  },
+  {
+    "scenarioType": "EmailTroubleshooting",
+    "title": "Mike's email is forwarding to an old address",
+    "description": "Mike Johnson reports that messages are being forwarded to an old personal address.\n\nReview the forwarding state and disable suspicious forwarding.",
+    "targetUserEmail": "mike.johnson@northstar.local",
+    "requiredEmailIssue": "ForwardingEnabled",
+    "expectedActions": [
+      "Find and select Mike Johnson",
+      "Review mailbox status",
+      "Disable suspicious mail forwarding",
+      "Verify forwarding is disabled"
+    ],
+    "successMessage": "Mike's mail forwarding issue has been resolved."
+  },
+  {
+    "scenarioType": "EmailTroubleshooting",
+    "title": "Jeff's mailbox is blocked",
+    "description": "Jeff Anderson cannot send or receive email because his mailbox is blocked.\n\nReview his mailbox status and unblock the mailbox.",
+    "targetUserEmail": "jeff.anderson@northstar.local",
+    "requiredEmailIssue": "MailboxBlocked",
+    "expectedActions": [
+      "Find and select Jeff Anderson",
+      "Review mailbox status",
+      "Unblock mailbox",
+      "Verify mailbox is no longer blocked"
+    ],
+    "successMessage": "Jeff's blocked mailbox issue has been resolved."
+  },
+  {
+    "scenarioType": "EmployeeOffboarding",
+    "title": "Nina is no longer with IT",
+    "description": "Nina Patel has left the organization.\n\nDisable her account, remove group access, and retire any assigned laptop.",
+    "targetUserEmail": "nina.patel@northstar.local",
+    "expectedActions": [
+      "Find and Find and select Nina Patel",
+      "Disable Nina's account",
+      "Remove unnecessary group access",
+      "Retire Nina's assigned laptop",
+      "Verify all changes appear in the audit log"
+    ],
+    "successMessage": "Nina's offboarding workflow has been reviewed."
+  },
+  {
+    "scenarioType": "LostLaptop",
+    "title": "Mike reports his laptop was lost",
+    "description": "Mike Johnson reports that his assigned laptop was lost.\n\nMark the device as lost and reset Mike's password as a safety step.",
+    "targetUserEmail": "mike.johnson@northstar.local",
+    "expectedActions": [
+      "Find and select Mike Johnson",
+      "Mark Mike's assigned laptop as Lost",
+      "Reset Mike's password",
+      "Confirm the lost device is no longer assigned",
+      "Verify the audit log"
+    ],
+    "successMessage": "Mike's lost device workflow has been reviewed."
+  },
+  {
+    "scenarioType": "LostLaptop",
+    "title": "Sarah lost her laptop",
+    "description": "Sarah Miller reports her assigned laptop is missing.\n\nMark the laptop as lost, then reset Sarah's password as a security precaution.",
+    "targetUserEmail": "sarah.miller@northstar.local",
+    "expectedActions": [
+      "Find and select Sarah Miller",
+      "Mark Sarah's assigned laptop as Lost",
+      "Reset Sarah's password",
+      "Confirm the lost device is no longer assigned",
+      "Verify the audit log"
+    ],
+    "successMessage": "Sarah's lost device workflow has been reviewed."
+  },
+  {
+    "scenarioType": "LostLaptop",
+    "title": "Nina reports a missing laptop",
+    "description": "Nina Patel says her laptop has gone missing.\n\nMark the assigned laptop as lost and reset her password.",
+    "targetUserEmail": "nina.patel@northstar.local",
+    "expectedActions": [
+      "Find and select Nina Patel",
+      "Mark Nina's assigned laptop as Lost",
+      "Reset Nina's password",
+      "Confirm the lost device is no longer assigned",
+      "Verify the audit log"
+    ],
+    "successMessage": "Nina's lost device workflow has been reviewed."
+  },
+  {
+    "scenarioType": "ReplacementLaptop",
+    "title": "Nina needs a replacement laptop",
+    "description": "Nina Patel needs a replacement laptop assigned.\n\nConfirm her account is active, choose an available active device, and assign it to her.",
+    "targetUserEmail": "nina.patel@northstar.local",
+    "expectedActions": [
+      "Find and select Nina Patel",
+      "Confirm Nina's account is Active",
+      "Choose an available Active device",
+      "Assign the device to Nina",
+      "Verify the device appears under Nina's device list"
+    ],
+    "successMessage": "Nina's replacement laptop assignment has been reviewed."
+  },
+  {
+    "scenarioType": "ReplacementLaptop",
+    "title": "Sarah needs a replacement laptop",
+    "description": "Sarah Miller needs a replacement laptop for her Sales work.\n\nConfirm her account is active, choose an available active device, and assign it to her.",
+    "targetUserEmail": "sarah.miller@northstar.local",
+    "expectedActions": [
+      "Find and select Sarah Miller",
+      "Confirm Sarah's account is Active",
+      "Choose an available Active device",
+      "Assign the device to Sarah",
+      "Verify the device appears under Sarah's device list"
+    ],
+    "successMessage": "Sarah's replacement laptop assignment has been reviewed."
+  },
+  {
+    "scenarioType": "ReplacementLaptop",
+    "title": "Mike needs a device reassigned",
+    "description": "Mike Johnson needs an active laptop assigned for Operations work.\n\nConfirm his account is active, choose an available active device, and assign it to him.",
+    "targetUserEmail": "mike.johnson@northstar.local",
+    "expectedActions": [
+      "Find and select Mike Johnson",
+      "Confirm Mike's account is Active",
+      "Choose an available Active device",
+      "Assign the device to Mike",
+      "Verify the device appears under Mike's device list"
+    ],
+    "successMessage": "Mike's replacement laptop assignment has been reviewed."
+  },
+  {
+    "scenarioType": "PasswordReset",
+    "title": "Sarah failed multiple sign-in attempts",
+    "description": "Sarah Miller failed several sign-in attempts and needs a safe password reset.\n\nVerify her account is not soft-deleted, then reset her password.",
+    "targetUserEmail": "sarah.miller@northstar.local",
+    "expectedActions": [
+      "Find and select Sarah Miller",
+      "Confirm account is not soft-deleted",
+      "Reset Sarah's password",
+      "Verify password reset appears in the audit log"
+    ],
+    "successMessage": "Sarah's failed sign-in password reset workflow has been reviewed."
+  },
+  {
+    "scenarioType": "PasswordReset",
+    "title": "Mike returned from vacation and forgot his password",
+    "description": "Mike Johnson returned from vacation and cannot remember his password.\n\nVerify the account is not soft-deleted and complete a password reset.",
+    "targetUserEmail": "mike.johnson@northstar.local",
+    "expectedActions": [
+      "Find and select Mike Johnson",
+      "Confirm account is not soft-deleted",
+      "Reset Mike's password",
+      "Verify password reset appears in the audit log"
+    ],
+    "successMessage": "Mike's return-from-vacation password reset has been reviewed."
+  },
+  {
+    "scenarioType": "PasswordReset",
+    "title": "Nina cannot sign into her workstation",
+    "description": "Nina Patel cannot sign into her workstation and requests a password reset.\n\nVerify the account is not soft-deleted and reset the password.",
+    "targetUserEmail": "nina.patel@northstar.local",
+    "expectedActions": [
+      "Find and select Nina Patel",
+      "Confirm account is not soft-deleted",
+      "Reset Nina's password",
+      "Verify password reset appears in the audit log"
+    ],
+    "successMessage": "Nina's workstation sign-in password reset has been reviewed."
+  },
+  {
+    "scenarioType": "EmployeeOffboarding",
+    "title": "Mike contractor access cleanup",
+    "description": "Mike Johnson's contractor assignment has ended.\n\nDisable his account, remove group access, and retire his assigned laptop.",
+    "targetUserEmail": "mike.johnson@northstar.local",
+    "expectedActions": [
+      "Find and select Mike Johnson",
+      "Disable Mike's account",
+      "Remove unnecessary group access",
+      "Retire Mike's assigned laptop",
+      "Verify all changes appear in the audit log"
+    ],
+    "successMessage": "Mike's contractor access cleanup has been reviewed."
+  },
+  {
+    "scenarioType": "EmployeeOffboarding",
+    "title": "Sarah immediate access removal",
+    "description": "Sarah Miller needs immediate access removal.\n\nDisable the account, remove unnecessary group access, and retire the assigned laptop.",
+    "targetUserEmail": "sarah.miller@northstar.local",
+    "expectedActions": [
+      "Find and select Sarah Miller",
+      "Disable Sarah's account",
+      "Remove unnecessary group access",
+      "Retire Sarah's assigned laptop",
+      "Verify all changes appear in the audit log"
+    ],
+    "successMessage": "Sarah's immediate access removal has been reviewed."
+  },
+  {
+    "scenarioType": "EmployeeOffboarding",
+    "title": "Nina IT access removal",
+    "description": "Nina Patel's IT access needs to be removed.\n\nDisable the account, remove unnecessary group access, and retire any assigned laptop.",
+    "targetUserEmail": "nina.patel@northstar.local",
+    "expectedActions": [
+      "Find and select Nina Patel",
+      "Disable Nina's account",
+      "Remove unnecessary group access",
+      "Retire Nina's assigned laptop",
+      "Verify all changes appear in the audit log"
+    ],
+    "successMessage": "Nina's IT access removal has been reviewed."
+  },
+  {
+    "scenarioType": "LostLaptop",
+    "title": "Mike's laptop was stolen from his car",
+    "description": "Mike Johnson reports that his laptop was stolen from his car.\n\nMark the device as lost and reset his password.",
+    "targetUserEmail": "mike.johnson@northstar.local",
+    "expectedActions": [
+      "Find and select Mike Johnson",
+      "Mark Mike's assigned laptop as Lost",
+      "Reset Mike's password",
+      "Confirm the lost device is no longer assigned",
+      "Verify the audit log"
+    ],
+    "successMessage": "Mike's stolen laptop workflow has been reviewed."
+  },
+  {
+    "scenarioType": "LostLaptop",
+    "title": "Sarah left her laptop at the airport",
+    "description": "Sarah Miller says her laptop was left at the airport and cannot be recovered yet.\n\nMark it as lost and reset her password.",
+    "targetUserEmail": "sarah.miller@northstar.local",
+    "expectedActions": [
+      "Find and select Sarah Miller",
+      "Mark Sarah's assigned laptop as Lost",
+      "Reset Sarah's password",
+      "Confirm the lost device is no longer assigned",
+      "Verify the audit log"
+    ],
+    "successMessage": "Sarah's airport laptop loss workflow has been reviewed."
+  },
+  {
+    "scenarioType": "LostLaptop",
+    "title": "Nina cannot locate her laptop",
+    "description": "Nina Patel cannot locate her assigned laptop after travel.\n\nMark the laptop as lost and reset her password.",
+    "targetUserEmail": "nina.patel@northstar.local",
+    "expectedActions": [
+      "Find and select Nina Patel",
+      "Mark Nina's assigned laptop as Lost",
+      "Reset Nina's password",
+      "Confirm the lost device is no longer assigned",
+      "Verify the audit log"
+    ],
+    "successMessage": "Nina's travel-related lost laptop workflow has been reviewed."
+  },
+  {
+    "scenarioType": "ReplacementLaptop",
+    "title": "Sarah needs a clean laptop assignment",
+    "description": "Sarah Miller needs a clean active laptop assigned for Sales.\n\nConfirm her account is active, choose an available active device, and assign it.",
+    "targetUserEmail": "sarah.miller@northstar.local",
+    "expectedActions": [
+      "Find and select Sarah Miller",
+      "Confirm Sarah's account is Active",
+      "Choose an available Active device",
+      "Assign the device to Sarah",
+      "Verify the device appears under Sarah's device list"
+    ],
+    "successMessage": "Sarah's clean laptop assignment has been reviewed."
+  },
+  {
+    "scenarioType": "ReplacementLaptop",
+    "title": "Mike needs a replacement after hardware failure",
+    "description": "Mike Johnson's laptop has failed and he needs an active replacement assigned.\n\nConfirm his account is active, choose an available active device, and assign it.",
+    "targetUserEmail": "mike.johnson@northstar.local",
+    "expectedActions": [
+      "Find and select Mike Johnson",
+      "Confirm Mike's account is Active",
+      "Choose an available Active device",
+      "Assign the device to Mike",
+      "Verify the device appears under Mike's device list"
+    ],
+    "successMessage": "Mike's hardware replacement workflow has been reviewed."
+  },
+  {
+    "scenarioType": "ReplacementLaptop",
+    "title": "Nina needs a loaner laptop",
+    "description": "Nina Patel needs a temporary loaner laptop.\n\nConfirm her account is active, choose an available active device, and assign it.",
+    "targetUserEmail": "nina.patel@northstar.local",
+    "expectedActions": [
+      "Find and select Nina Patel",
+      "Confirm Nina's account is Active",
+      "Choose an available Active device",
+      "Assign the device to Nina",
+      "Verify the device appears under Nina's device list"
+    ],
+    "successMessage": "Nina's loaner laptop assignment has been reviewed."
+  },
+
+  {
+    "scenarioType": "NewHireOnboarding",
+    "title": "Ava Brooks joins Sales",
+    "description": "Ava Brooks is joining the Sales department.\n\nCreate her account, assign the User role, add Sales shared drive access, and assign an active device.",
+    "targetUserEmail": "ava.brooks@northstar.local",
+    "requiredFirstName": "Ava",
+    "requiredLastName": "Brooks",
+    "requiredDepartment": "Sales",
+    "requiredRole": "User",
+    "requiredGroupName": "Sales-SharedDrive-Access",
+    "expectedActions": [
+      "Create account for Ava Brooks",
+      "Find and select Ava Brooks",
+      "Confirm Ava's account is Active",
+      "Assign Ava the User role",
+      "Add Ava to Sales-SharedDrive-Access",
+      "Assign an active device to Ava",
+      "Verify user creation appears in the audit log"
+    ],
+    "successMessage": "Ava Brooks has been onboarded successfully."
+  },
+
+  {
+    "scenarioType": "NewHireOnboarding",
+    "title": "Leo Carter joins Operations",
+    "description": "Leo Carter is joining the Operations department.\n\nCreate his account, assign the User role, add Operations shared drive access, and assign an active device.",
+    "targetUserEmail": "leo.carter@northstar.local",
+    "requiredFirstName": "Leo",
+    "requiredLastName": "Carter",
+    "requiredDepartment": "Operations",
+    "requiredRole": "User",
+    "requiredGroupName": "Operations-SharedDrive-Access",
+    "expectedActions": [
+      "Create account for Leo Carter",
+      "Find and Find and select Leo Carter",
+      "Confirm Leo's account is Active",
+      "Assign Leo the User role",
+      "Add Leo to Operations-SharedDrive-Access",
+      "Assign an active device to Leo",
+      "Verify user creation appears in the audit log"
+    ],
+    "successMessage": "Leo Carter has been onboarded successfully."
+  },
+  {
+    "scenarioType": "NewHireOnboarding",
+    "title": "Priya Shah joins IT Helpdesk",
+    "description": "Priya Shah is joining the IT department as a helpdesk technician.\n\nCreate her account, assign the Helpdesk role, add Helpdesk-Technicians group access, and assign an active device.",
+    "targetUserEmail": "priya.shah@northstar.local",
+    "requiredFirstName": "Priya",
+    "requiredLastName": "Shah",
+    "requiredDepartment": "IT",
+    "requiredRole": "Helpdesk",
+    "requiredGroupName": "Helpdesk-Technicians",
+    "expectedActions": [
+      "Create account for Priya Shah",
+      "Find and Find and select Priya Shah",
+      "Confirm Priya's account is Active",
+      "Assign Priya the Helpdesk role",
+      "Add Priya to Helpdesk-Technicians",
+      "Assign an active device to Priya",
+      "Verify user creation appears in the audit log"
+    ],
+    "successMessage": "Priya Shah has been onboarded successfully."
+  }
+
+]
